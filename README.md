@@ -1,4 +1,4 @@
-	# RedisCache – PHP Cache System with Redis
+# RedisCache – PHP Cache System with Redis
 ## Overview
 This system provides a PHP class called `redisCache` that allows you to interact with Redis in a simple and secure way. Its main purpose is to offer a reusable cache layer that speeds up access to temporary data, such as API responses, configurations, or computational results.
 Avoid repeated calls to external services or unnecessary calculations by storing data in temporary memory. This improves the performance of wdeb applications, reduces the load on external servers, and allows for a smoother experience for the end user.
@@ -127,5 +127,6 @@ This project will be part of larger projects I'll be working on and likely publi
 If you have ideas, suggestions, or find opportunities for improvement, I'd love to hear about them.
 
 I'm open to technical feedback, feature proposals, or fixes that will help strengthen this system.
+
 
 You can read more about my vision for this project, future plans, and how you can contribute in the CONTRIBUTING.md file.
