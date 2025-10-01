@@ -21,10 +21,10 @@ Redis allows you to save those responses for a specified time, avoiding duplicat
 `$cache = new redisCache($port, $host);`
 The `$port` and `$host` parameters are optional. If they are not passed to the function, the default values ​​will be `$port = 6379` and `$host = ‘127.0.0.1’`.
 
-#### **Connect to the Redis server**\
+#### **Connect to the Redis server**
 `$cache->connect();`
 
-#### **Save data**\
+#### **Save data**
 `$cache->set($key, $value, $seconds);`\
 Examples
 
@@ -84,22 +84,22 @@ echo "Error: " . $e->getMessage();
 
 ##### **Public Methods**
 
-######`__construct($port = 6379, $host = '127.0.0.1')`
+`__construct($port = 6379, $host = '127.0.0.1')`
 Initializes the class with the connection parameters. If not specified, the default values ​​are used.
 
-######`connect()`
+`connect()`
 Establishes the connection to the Redis server.\
 Exceptions:
 - Throws an exception if the connection fails.
 
-######`set($key, $value, $expiration = 3600)`
+`set($key, $value, $expiration = 3600)`
 Stores a value in Redis with a key and expiration time. If the value is an array or object, it is automatically converted to JSON.\
 Exceptions:
 - Exception if Redis is not connected
 - The operation failed.
 Returns true if the save was successful
 
-######`get($key)`
+`get($key)`
 Retrieves the value associated with a key. If the value is valid .JSON, it is decoded as an associative array if the value was originally an object or array.\
 Exceptions:\
 • Exception if Redis is not connected.
@@ -108,7 +108,7 @@ Exceptions:\
 
 ##### **Private Methods**
 
-######`checkConnection()`
+`checkConnection()`
 Checks if Redis is connected and responds to the ping.
 
 Exceptions:
@@ -116,7 +116,7 @@ Exceptions:
 - The ping fails.
 Returns true if everything works correctly
 
-######`checkKey($key)`
+`checkKey($key)`
 Checks if a key exists in Redis.
 
 Exceptions:
@@ -130,4 +130,5 @@ I'm open to technical feedback, feature proposals, or fixes that will help stren
 
 
 You can read more about my vision for this project, future plans, and how you can contribute in the CONTRIBUTING.md file.
+
 
