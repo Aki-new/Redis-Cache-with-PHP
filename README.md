@@ -17,7 +17,7 @@ Redis allows you to save those responses for a specified time, avoiding duplicat
 + Have the `Redis` extension enabled in `PHP` `(phpredis)`.
 + `PHP` 7.4 or higher recommended.
 
-#### **Instantiate the class**\
+#### **Instantiate the class**
 `$cache = new redisCache($port, $host);`
 The `$port` and `$host` parameters are optional. If they are not passed to the function, the default values ​​will be `$port = 6379` and `$host = ‘127.0.0.1’`.
 
@@ -130,5 +130,6 @@ I'm open to technical feedback, feature proposals, or fixes that will help stren
 
 
 You can read more about my vision for this project, future plans, and how you can contribute in the CONTRIBUTING.md file.
+
 
 
